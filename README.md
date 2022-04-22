@@ -1,13 +1,14 @@
 # automap
 Script to automate all of the essential nmap scans against a target
-
 Must be run with root privileges (sudo).
+Written for Unix based systems, and Nmap must already be installed!
+
 usage: sudo python automap.py -ip 10.10.10.10
 
 Fire and forget, you can skip some of the scans with Ctrl-C if required.
 Outputs various scan results to individual text files.
 
-Scans this automates on starting script:
+Scans this automates:
 
 Runs top 100 TCP scan
 Runs top 100 UDP scan
