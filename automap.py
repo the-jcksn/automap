@@ -124,6 +124,7 @@ with open('top100udpscan.txt', 'r') as ftpucheck:
 			print(colored('[+]','blue'), 'All FTP scripts complete!')
 			printstrip()
 			delempty('FTPscriptscan.txt')
+#'apparently' its important to close files when youre done with them. So I'll do it just to keep you happy.
 ftpcheck.close()
 ftpucheck.close()
 
@@ -173,6 +174,7 @@ with open('top100tcpscan.txt', 'r') as hashdump:
 			print(colored('[+]','blue'), 'Mysql hash dump complete!')
 			printstrip()
 			delempty('mysql-hash-dump.txt')
+#we're repeating a lot of very similar code all over the place aren't we... should probably do something about that! I'm not going to right now though, if it works don't touch it is my motto.
 string = '3306/udp open'
 with open('top100udpscan.txt', 'r') as hashudump:
 	for line in hashudump:
