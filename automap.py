@@ -1,3 +1,11 @@
+#automap
+#python 'fire and forget' script for automating essential nmap scans
+#github.com/the-jcksn
+#yeah I know the code is spaghetti, I'll sort it out and refine more as definitions when I get a chance
+#open source = no moaning if something doesn't work, either fix it yourself in a pull request or ask nicely!
+
+#usage: sudo python automap.py 10.10.10.10
+
 import argparse
 import os
 from termcolor import colored
@@ -212,5 +220,3 @@ ldap.close()
 
 print(colored('[!] All scans completed!','green'))
 printstrip()
-
-#delete me
